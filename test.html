@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+    }
+    .grid-container{
+      display:grid;
+      width:100vw;
+      height:30vh;
+      grid-template-columns:[a]100px[b c]100px 100px;
+      grid-template-rows:repeat(3,1fr);
+      background:gray;
+      grid-template-areas:"header header header.."
+                          "nav nav nav.."
+                          " main main ...";
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div style="background:red; ;"></div>
+    <div style="background:green;  "></div>
+    <div style="background:blue;"></div>
+    <div style="background:red; ;"></div>
+    <div style="background:blue;"></div>
+    <div style="background:yellow;  "></div>
+  </div>
+</body>
+</html>

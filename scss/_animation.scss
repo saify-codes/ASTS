@@ -1,0 +1,38 @@
+:root {
+    --animate-delay: 0.5s;
+}
+.animate__animated{
+  animation-fill-mode: backwards;
+}
+@keyframes spinner {
+  from{
+    rotate: 0;
+  }
+  to{
+    rotate: 1turn;
+  }
+}
+
+@keyframes check_mark_height{
+  to{
+    height:100%;
+  }
+}
+@keyframes check_mark_width{
+  to{
+    width:100%;
+  }
+}
+@keyframes popup{
+  20%{
+    top:150px;
+    opacity:1;
+  }
+  80%{
+    top:150px;
+    opacity:1;
+  }
+  100%{
+    top:250px;
+  }
+}
